@@ -39,6 +39,10 @@ function buttonCount() {
   <div>
     <button @click="buttonCount()">More info</button>
   </div>
+
+  <div>
+        <img src="/Images/coffeemachine2.webp" alt="coffee" width="250" height="275" />
+    </div>
 </template>
 
 <style>
@@ -60,4 +64,10 @@ body {
   background-color: #2c3e50;
   color: seashell;
 }
+
+img {
+        border-style: solid;
+        border-color: #00bff2;
+        margin: 25px;
+    }
 </style>

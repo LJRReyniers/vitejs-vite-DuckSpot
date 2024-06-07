@@ -28,9 +28,14 @@ function buttonCount() {
       when you won't disturb others.
     </p>
   </div>
+  
   <div>
     <button @click="buttonCount()">More info</button>
   </div>
+
+  <div>
+        <img src="/Images/pacman.jpg" alt="games" width="300" height="400"/>
+    </div>
 </template>
 
 <style>
@@ -52,4 +57,10 @@ body {
   background-color: #2c3e50;
   color: seashell;
 }
+
+img {
+        border-style: solid;
+        border-color: #00bff2;
+        margin: 25px;
+    }
 </style>
