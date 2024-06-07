@@ -2,7 +2,7 @@
 import TheWelcome from '../components/TheWelcome.vue';
 
 (function () {
-  let HomeViewCount = parseInt(localStorage.getItem('HomeViewCount')) || 0;
+  let HomeViewCount = parseInt(localStorage.getItem('HomeViewCount') || '0');
 
   HomeViewCount++;
   localStorage.setItem('HomeViewCount', HomeViewCount.toString());

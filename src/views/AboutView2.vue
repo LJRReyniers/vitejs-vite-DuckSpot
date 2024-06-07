@@ -1,6 +1,6 @@
-<script>
+<script setup lang="ts">
 (function () {
-  let AboutViewCount = parseInt(localStorage.getItem('AboutViewCount')) || 0;
+  let AboutViewCount = parseInt(localStorage.getItem('AboutViewCount') || '0');
 
   AboutViewCount++;
   localStorage.setItem('AboutViewCount', AboutViewCount.toString());

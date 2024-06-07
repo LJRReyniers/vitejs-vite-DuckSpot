@@ -20,7 +20,13 @@ let currentImageIndex = ref(0); // Track the index of the currently selected ima
 function switchImage(index: number) {
   currentImageIndex.value = index; // Set the current image index based on the button clicked
   const image = images[index]; // Get the image object based on the index
-  document.querySelector('img').src = image.src; // Update the img src directly
+  //document.querySelector('img').src = image.src; // Update the img src directly
+  const imgElement = document.querySelector('img');
+        if (imgElement) {
+            imgElement.src = image.src;
+        } else {
+            console.error('Image element not found.');
+        }
 }
 </script>
 

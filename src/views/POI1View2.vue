@@ -1,6 +1,6 @@
 <script setup lang="ts">
 (function () {
-  let POI1ViewCount = parseInt(localStorage.getItem('POI1ViewCount')) || 0;
+  let POI1ViewCount = parseInt(localStorage.getItem('POI1ViewCount') || '0');
 
   POI1ViewCount++;
   localStorage.setItem('POI1ViewCount', POI1ViewCount.toString());
@@ -8,7 +8,7 @@
   console.log('POI1ViewCount =', POI1ViewCount);
 })();
 function buttonCount() {
-  let POI1ButtonCount = parseInt(localStorage.getItem('POI1ButtonCount')) || 0;
+  let POI1ButtonCount = parseInt(localStorage.getItem('POI1ButtonCount') || '0');
 
   POI1ButtonCount++;
   localStorage.setItem('POI1ButtonCount', POI1ButtonCount.toString());
