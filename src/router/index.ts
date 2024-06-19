@@ -7,6 +7,7 @@ import HomeView2 from '../views/HomeView2.vue';
 import AboutView2 from '../views/AboutView2.vue';
 import POI1View2 from '../views/POI1View2.vue';
 import POI2View2 from '../views/POI2View2.vue';
+import POI3View from '../views/POI3View.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,6 +54,11 @@ const router = createRouter({
       path: '/POI22',
       name: 'POI22',
       component: POI2View2,
+    },
+    {
+      path: '/POI3',
+      name: 'POI3',
+      component: POI3View,
     },
   ],
 });
