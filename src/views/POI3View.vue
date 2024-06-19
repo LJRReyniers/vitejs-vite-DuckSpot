@@ -19,12 +19,13 @@ defineExpose({ POI3ViewCount });
 
 <template>
   <div>
-    <h3>Thank you for scanning!</h3>
+    <h2>Thank you for scanning!</h2>
     <p>You're the {{ POI3ViewCount }} visitor of this page.</p>
     <p>-</p>
-    <p>Claim your reward:</p>
+    <h3>Claim your reward:</h3>
     <p>On Wednesdays, claim it at this table.</p>
-    <p>On other days, claim it by the security desk.</p>
+    <p>On other days, claim it by screenshotting the page 
+        and showing it at this table on Wednesdays.</p>
     <p>-</p>
     <p>To claim a reward, 
         simply show this page to someone at the correct location (stated above).</p>
